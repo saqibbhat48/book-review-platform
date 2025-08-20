@@ -24,7 +24,7 @@ A full-stack web application built with React (Vite), Node.js, Express, and Mong
   - React Router (navigation)
   - Tailwind CSS (styling)
   - Lucide React (icons)
-  - Reac Toast (notifications)
+  - React Toast (notifications)
 - **Backend**: 
   - Node.js with Express
   - MongoDB with Mongoose (database)
