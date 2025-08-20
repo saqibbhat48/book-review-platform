@@ -69,8 +69,8 @@ const Navigation = ({ children }) => {
   return (
     <div className="flex w-full">
       {/* Sidebar for Desktop */}
-      <div className="hidden md:block w-64 bg-white border-r fixed left-0 top-0 bottom-0 z-40">
-        <div className="p-6 border-b flex items-center justify-between">
+      <div className="hidden md:block w-64 bg-white shadow-2xl fixed left-0 top-0 bottom-0 z-40">
+        <div className="p-6 shadow flex items-center justify-between">
           <div className="flex items-center">
             <Book className="w-8 h-8 text-indigo-600 mr-2" />
             <span className="text-xl font-bold text-indigo-600">BookReview</span>
@@ -109,7 +109,7 @@ const Navigation = ({ children }) => {
       </div>
 
       {/* Mobile Bottom Navigation */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t md:hidden z-50">
+      <div className="fixed bottom-0 left-0 right-0 bg-white md:hidden z-50">
         <div className="grid grid-cols-5 py-2">
           {navigationItems.filter(item => item.isVisible).map((item) => (
             <Link
