@@ -41,7 +41,7 @@ const Profile = () => {
     }
 
     try {
-      await updateUser(user.id, { username, email });
+      await updateUser(user, { username, email });
       setSuccess('Profile updated successfully');
     } catch (err) {
       setError('Failed to update profile');
